@@ -2,7 +2,7 @@
 
 namespace App\Action;
 
-use App\Models\ProductField;
+use App\Models\CustomField;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
@@ -11,7 +11,7 @@ class ValidateProductFieldAction
     /**
      * @throws ValidationException
      */
-    public static function execute(ProductField $productField, string $value): void
+    public static function execute(CustomField $productField, string $value): void
     {
         $validator = Validator::make(
             [
