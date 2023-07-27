@@ -12,7 +12,7 @@ class Product extends Model
 
     public function fields(): BelongsToMany
     {
-        return $this->belongsToMany(CustomField::class, 'custom_fields')
+        return $this->belongsToMany(CustomField::class, 'product_fields',null , 'product_field_id')
             ->withPivot('value')
             ->withTimestamps();
     }

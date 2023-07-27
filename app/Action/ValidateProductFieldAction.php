@@ -18,7 +18,7 @@ class ValidateProductFieldAction
                 $productField->name => $value,
             ],
             [
-                $productField->name => $productField->validation_rules,
+                $productField->name => $productField->validation,
             ],
         );
 
