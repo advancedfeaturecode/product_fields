@@ -2,7 +2,7 @@
 
 Имеется добавлять к продуктам произвольные поля, котоорые хранятся отдельно от продуктов
 
-- php artisan db:seed
+- ``php artisan db:seed``
 
 Примеры запросов
 - ``POST http://127.0.0.1:8000/api/products/1/product_fields/1 (Параметр value='value1')``
